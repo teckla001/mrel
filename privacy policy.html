@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Privacy policy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body style="background-color: grey;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarsExample08" style="display: flex; justify-content: end;">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a>
+                <!--button trigger model-->
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Register
+               </button>
+              </a>
+              </li>
+              &nbsp; &nbsp;
+              <li class="nav-item">
+                <a class="nav-link " href="login.html">Login</a>
+              </li>
+              &nbsp; 
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="inquiry.html">Inquiry</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="apartment.jpg" alt="logo" width="60" height="60"> Malaika Apartments.LTD</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about us.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact us.html">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productA.html">Apartments</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Mini-supermarket
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item active" href="productM.html">Products</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Bakery
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="productB.html">Products</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li> -->
+            <!-- Button trigger modal -->
+            <br>
+
+       <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: white;">Register</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="color: white;">
+        <form class="row g-3" action="welcome.php" method="post" onsubmit="myFunction()">
+          <div class="row g-3">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name*" aria-label="First name" name="name" required>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name*" aria-label="Last name" name="lname" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email*</label>
+            <input type="email" class="form-control" id="inputEmail4" name="email" required>
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Password*</label>
+            <input type="password" class="form-control" id="inputPassword4" name="password" required>
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Address*</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" name="address" required>
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" name="address2">
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">District</label>
+            <input type="text" class="form-control" id="inputCity" name="district">
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">Region</label>
+            <select id="inputState" class="form-select" name="region">
+              <option selected>Choose</option>
+              <option>Dar-es-salaam</option>
+              <option>Moshi</option>
+              <option>Pwani</option>
+              <option>Arusha</option>
+              <option>Mwanza</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip" name="zip">
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="learn"></textarea>
+            <label for="floatingTextarea2"> Where did you learn about Malaika apartments</label>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions and any new notifications regarding Malaika apartments.
+                </label>
+                <div class="invalid-feedback">
+                You must agree before submitting.
+                </div>
+             </div>
+           </div>
+           <div class="col-12">
+            <button class="btn btn-secondary w-70 py-2" type="submit">Register</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+           </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-secondary" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <div style="padding-left: 2%; padding-right: 2%; padding-top: 1%;">
+    <header class="page-header">
+        <h1 class="page-title" style="display: flex; justify-content: center;">Privacy Policy</h1>		
+     </header>
+     
+    <hr class="my-4">
+    <p style="margin-left: 14.2pt; mso-add-space: auto; text-align: justify; text-indent: -14.2pt; line-height: normal; mso-list: l3 level1 lfo2;"><!-- [if !supportLists]--><b><span lang="EN-GB">1.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp; </span></span></b><!--[endif]--><b><span lang="EN-GB">Introduction</span></b></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB"> Malaika-apartments.Limited (“TCS”/”we”/”us”/”our”/”) are committed to protecting and respecting your privacy. We are pleased to provide you with our privacy notice and request you to read it carefully.</span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">We have created this privacy notice to explain:</span></p>
+    <p style="text-align: justify; text-indent: -18.0pt; line-height: normal; mso-list: l1 level1 lfo1;"><!-- [if !supportLists]--><span lang="EN-GB"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></span><span lang="EN-GB">i. How we use any personal data that we receive from you or may collect about you, and</span></p>
+    <p style="text-align: justify; text-indent: -18.0pt; line-height: normal; mso-list: l1 level1 lfo1;"><!-- [if !supportLists]--><span lang="EN-GB"><span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></span><span lang="EN-GB">ii. Your privacy rights under applicable privacy laws.</span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">Our use of your personal data is subject to your instructions, the Tanzanian General Data Protection Regulation (“TDPR”), other relevant Tanzanian legislation and our professional duty of confidentiality.</span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">For the purposes of the GDPR, the Data Controller is:</span></p>
+    <p style="text-align: justify; line-height: normal;"><b><span lang="EN-GB">Malaika-apartments.Limited</span></b><span lang="EN-GB"> of Mkwajuni, makongo juu, dar-es-salaam,Tanzania</span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">If you wish to request any clarification or additional information in relation to this privacy notice, or you may wish to exercise any of your rights in relation to your personal data, please send us an email on cis@malaika-apartments.limited.com. <span style="color: #44546a; mso-themecolor: text2;">&nbsp;</span></span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">This privacy notice is effective as of 1st september 2023. In the event that we modify this privacy notice, we will post a clear notice of this update in the homepage of our website.&nbsp; </span></p>
+    <p style="margin-left: 14.2pt; mso-add-space: auto; text-align: justify; text-indent: -14.2pt; line-height: normal; mso-list: l3 level1 lfo2;"><!-- [if !supportLists]--><b><span lang="EN-GB">2.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp; </span></span></b><!--[endif]--><b><span lang="EN-GB">Key terms</span></b></p>
+
+    <table style="border: none;" border="1" width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td style="width: 148.6pt; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" valign="top" width="162"><p style="text-align: justify;"><b><span lang="EN-GB">Data Controller</span></b></p>
+     </td>
+        <td style="width: 302.2pt; border: solid windowtext 1.0pt; border-left: none; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" valign="top" width="309"><p style="text-align: justify;"><span lang="EN-GB" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">The person that determines the purposes and means of the processing of personal data</span></p>
+    </td> 
+   </tr> 
+   <tr>
+    <td style="width: 148.6pt; border: solid windowtext 1.0pt; border-top: none; mso-border-top-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" valign="top" width="162"><p style="text-align: justify;"><b><span lang="EN-GB">Personal data</span></b></p>
+    </td>
+    <td style="width: 302.2pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" valign="top" width="309"><p style="text-align: justify;"><span lang="EN-GB" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Any information relating to an identified or identifiable natural person&nbsp;</span></p>
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 148.6pt; border: solid windowtext 1.0pt; border-top: none; mso-border-top-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" valign="top" width="162"><p style="text-align: justify;"><b><span lang="EN-GB">Processing</span></b></p>
+   </td>
+    <td style="width: 302.2pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" valign="top" width="309"><p style="text-align: justify;"><span lang="EN-GB" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Any operation which is performed on personal data such as collection, storage, use and erasure</span></p>
+   </td>
+  </tr>
+    <tr>
+        <td style="width: 148.6pt; border: solid windowtext 1.0pt; border-top: none; mso-border-top-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" valign="top" width="162"><p style="text-align: justify;"><b><span lang="EN-GB">Special Category Data</span></b></p>
+     </td>
+        <td style="width: 302.2pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" valign="top" width="309"><p style="text-align: justify;"><span lang="EN-GB">Personal Data <span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership, genetic and biometric data and data concerning health, sex life or sexual orientation </span></span></p>
+     </td>
+    </tr>
+    </tbody>
+    </table>
+    <p style="text-align: justify; line-height: normal;"><b><span lang="EN-GB" style="mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin; color: #5b9bd5; mso-themecolor: accent1;">&nbsp;</span></b></p>
+    <p style="text-align: justify; line-height: normal;"><b><span lang="EN-GB">&nbsp;</span></b></p>
+    <p style="margin-left: 14.2pt; text-align: justify; text-indent: -14.2pt; line-height: normal;"><b><span lang="EN-GB">3.&nbsp; Personal Data that we collect, may process and for what we may use it </span></b></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">Most of the information we process is given to us directly by you. This includes information that you input via our website and that you provide us with over the telephone and email. </span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">However, we may also collect personal data about you through our CCTV surveillance system “the CCTV system” which we have installed outside and inside our various outlets/premises around dar-es-salaam. </span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">Signs are placed throughout our premises to inform our clients that CCTV is in operation. The CCTV system is capable of being monitored for 24 hours every day of the year. Cameras are monitored in a secure area and accessible solely by authorized staff. All images captured by the CCTV System remain the property of Malaika-apartments.Limited. </span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">We can only use your personal data if we have a lawful reason for doing so. Under data protection laws we may process your personal data if you have given us your consent or it is necessary:</span></p>
+    <p style="margin-left: 37.5pt; mso-add-space: auto; text-align: justify; text-indent: -18.0pt; line-height: normal; mso-list: l0 level1 lfo3;"><!-- [if !supportLists]--><span lang="EN-GB" style="font-family: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol;">–<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span lang="EN-GB">for our legitimate interests, or</span></p>
+    <p style="margin-left: 37.5pt; mso-add-space: auto; text-align: justify; text-indent: -18.0pt; line-height: normal; mso-list: l0 level1 lfo3;"><!-- [if !supportLists]--><span lang="EN-GB" style="font-family: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol;">–<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span lang="EN-GB">to carry out our contractual obligations, or</span></p>
+    <p style="margin-left: 37.5pt; mso-add-space: auto; text-align: justify; text-indent: -18.0pt; line-height: normal; mso-list: l0 level1 lfo3;"><!-- [if !supportLists]--><span lang="EN-GB" style="font-family: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol;">–<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><span lang="EN-GB">to comply with a legal obligation.</span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">We normally process your personal data for the purpose of processing your request for using our services. We process your personal data on the ground of legitimate interest when we have a business or commercial reason to use your information, so long as this is not overridden by your own rights and interests.</span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">However, with respect to sensitive data we will only process such data upon your explicit consent.</span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB" style="color: black; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b>In summary, we collect 2 types of data from you: (i) personal data like contact details to enable us to fulfil our service and (ii) &nbsp;behavioural data to better improve our service to you, which we will only collect if you Opt In.</b></span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">The table below sets out the types of personal data that we may process, for what we may use it and our legal bases, which are our reasons for processing:</span></p>
+
+    <table style="border: none;" border="1" width="100%" cellspacing="0" cellpadding="0"><tbody><tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes; height: 46.45pt;">
+        <td style="width: 82.7pt; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; background: darkgrey; mso-background-themecolor: accent1; mso-background-themetint: 51; padding: 0cm 5.4pt 0cm 5.4pt; height: 46.45pt;" valign="top" width="101"><p style="text-align: center;" align="center"><b><span lang="EN-GB">Activity</span></b></p>
+        </td>
+        <td style="width: 136.85pt; border: solid windowtext 1.0pt; border-left: none; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; background: darkgrey; mso-background-themecolor: accent1; mso-background-themetint: 51; padding: 0cm 5.4pt 0cm 5.4pt; height: 46.45pt;" valign="top" width="129"><p style="text-align: center; align: center;"><b><span lang="EN-GB">Personal data we may process</span></b></p>
+        </td>
+        <td style="width: 113.45pt; border: solid windowtext 1.0pt; border-left: none; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; background: darkgrey; mso-background-themecolor: accent1; mso-background-themetint: 51; padding: 0cm 5.4pt 0cm 5.4pt; height: 46.45pt;" valign="top" width="119"><p style="text-align: center;" align="center"><b><span lang="EN-GB">For what reasons we may use your personal data</span></b></p>
+        </td>
+        <td style="width: 117.8pt; border: solid windowtext 1.0pt; border-left: none; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; background: darkgrey; mso-background-themecolor: accent1; mso-background-themetint: 51; padding: 0cm 5.4pt 0cm 5.4pt; height: 46.45pt;" valign="top" width="123"><p style="text-align: center;" align="center"><b><span lang="EN-GB">Our legal bases</span></b></p>
+            <p><b><span lang="EN-GB">&nbsp;</span></b></p>
+        </td>
+        </tr>
+            <tr style="mso-yfti-irow: 1; height: 46.45pt;"><td style="width: 82.7pt; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-image: initial; border-top: none; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; padding: 0cm 5.4pt; height: 46.45pt;" valign="top" width="101"><p style="text-align: center;" align="center"><span lang="EN-GB">When you register and make use of our online shopping service</span></p></td><td style="width: 136.85pt; border-top: none; border-left: none; border-bottom: 1pt solid windowtext; border-right: 1pt solid windowtext; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; padding: 0cm 5.4pt; height: 46.45pt;" valign="top" width="129"><p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">Contact details that you provide to us when you request register on our website.</span></p><p style="margin-bottom: 11.5pt; line-height: 16.8pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-GB">These include your full name, address, email address, telephone number, date of birth, your order history, your account login details for our website including your user name and chosen password.</span></p><p style="margin-bottom: 11.5pt; line-height: 16.8pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span lang="EN-GB">NOTE: </span>
+            </b><span lang="EN-GB" style="color: black; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b>Your payment details are not processed by us but are submitted directly to our third-party payment providers via a redirection to their website.</span></b></p>
+        </td>
+            <td style="width: 113.45pt; border-top: none; border-left: none; border-bottom: 1pt solid windowtext; border-right: 1pt solid windowtext; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; padding: 0cm 5.4pt; height: 46.45pt;" valign="top" width="119"><p><span lang="EN-GB">To provide you with our products and online shopping service.</span></p><p><span lang="EN-GB">To improve your shopping experience.</span></p>
+                <p><span lang="EN-GB">Analytics and profiling</span></p>
+                <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">Contacting you and responding to your communications with us.</span></p>
+                <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">&nbsp;</span></p>
+                <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">Updating and enhancing our contacts/client base.</span></p><p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">&nbsp;</span></p><p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">To provide you with all of our latest news, offers and activities.</span></p>
+            </td>
+                <td style="width: 117.8pt; border-top: none; border-left: none; border-bottom: 1pt solid windowtext; border-right: 1pt solid windowtext; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; padding: 0cm 5.4pt; height: 46.45pt;" valign="top" width="123"><p><strong><span lang="EN-GB" style="font-family: Calibri, sans-serif; color: #4c4c4c; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Performance of a contract:</span></strong></p>
+                    <p><span lang="EN-GB" style="color: #4c4c4c; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Enabling us to perform the contract with you and provide you with our products or services , such as order confirmation and dispatch.</span></p>
+                    <p style="margin-top: 12.0pt;"><b><span lang="EN-GB">For our legitimate interests:</span></b></p>
+                    <p><span lang="EN-GB">Responding to your communications with us, including complaints or claims made by you.<b></b></span></p>
+                    <p><span lang="EN-GB" style="color: #4c4c4c; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Processing is necessary for us to conduct our business, as long as our interests are not overridden by your interests or rights.</span></p>
+                    <p style="margin-top: 12.0pt; text-align: justify;"><b><span lang="EN-GB">Performance of a legal obligation</span></b></p>
+                    <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">In satisfaction of any obligation imposed on us by law.</span></p>
+                    <p style="text-align: justify;"><b><span lang="EN-GB">Consent</span></b></p><p><span lang="EN-GB">On the basis of the consent that you have provided us, where this is required.</span><b></b></p>
+                </td>
+                </tr>
+                <tr style="mso-yfti-irow: 2; height: 13.7pt;">
+                    <td style="width: 82.7pt; border: solid windowtext 1.0pt; border-top: none; mso-border-top-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 13.7pt;" valign="top" width="101"><p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">Making use of our website when you make a general enquiry.</span></p>
+                        <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">&nbsp;</span></p><p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">&nbsp;</span></p>
+                    </td>
+                        <td style="width: 136.85pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 13.7pt;" valign="top" width="129"><p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">Contact details that you provide to us when you request information about our services through our “Contact Us” form on our website.</span></p>
+                            <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">These include your full name, telephone number, email address and other personal data that you may provide us.</span></p>
+                        </td>
+                        <td style="width: 113.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 13.7pt;" valign="top" width="119">
+                            <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">Responding to your communications with us.</span></p>
+                            <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">Updating and enhancing our contacts/client base.<b></b></span></p>
+                        </td>
+                             <td style="width: 117.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 13.7pt;" valign="top" width="123"><p style="margin-top: 12.0pt; text-align: justify;"><b><span lang="EN-GB">For our legitimate interests:</span></b></p><p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">Managing business communications.</span></p>
+                                <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">&nbsp;</span></p>
+                                <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">Responding to your communications with us. </span></p>
+                                <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><b><span lang="EN-GB" style="mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin; color: #5b9bd5; mso-themecolor: accent1;">&nbsp;</span></b></p>
+                                <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">Responding to your communications with us, including complaints or claims made by you.</span></p>
+                            </td>
+                        </tr>
+                        <tr style="mso-yfti-irow: 3; height: 13.7pt;">
+                            <td style="width: 82.7pt; border: solid windowtext 1.0pt; border-top: none; mso-border-top-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 13.7pt;" valign="top" width="101"><p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">When you communicate with us for any other reason by telephone.</span></p>
+                                <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">&nbsp;</span></p><p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">&nbsp;</span></p>
+                            </td>
+                            <td style="width: 136.85pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 13.7pt;" valign="top" width="129"><p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">Contact details that you provide us when you request information about any of our services, or when you wish to give us feedback or make a complaint via telephone. </span></p>
+                                <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">These include any personal data that you may provide us in your communications with us.</span></p>
+                            </td>
+                                <td style="width: 113.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 13.7pt;" valign="top" width="119">
+                                    <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">Responding to your communications including service emails providing post-dining feedback.</span></p>
+                                    <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">&nbsp;</span></p><p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">Internal recording.</span></p><p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">&nbsp;</span></p>
+                                    <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">Improve our products and services.</span></p>
+                                </td>
+                                <td style="width: 117.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 13.7pt;" valign="top" width="123"><p style="margin-top: 12.0pt; text-align: justify;"><b><span lang="EN-GB">For our legitimate interests:</span></b></p>
+                                        <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">Getting to know the relative contact person.<b></b></span></p>
+                                        <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">&nbsp;</span></p>
+                                        <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">Managing business communications.</span></p>
+                                        <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">&nbsp;</span></p>
+                                        <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">Responding to your communications with us, including complaints or claims made by you.<b></b></span></p>
+                                </td>
+                            </tr>
+                                        <tr style="mso-yfti-irow: 4; height: 13.7pt;"><td style="width: 82.7pt; border: solid windowtext 1.0pt; border-top: none; mso-border-top-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 13.7pt;" valign="top" width="101"><p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">Signing up for email updates</span></p>
+                                </td>
+                                <td style="width: 136.85pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 13.7pt;" valign="top" width="129">
+                                    <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">Your name and surname, as well as, your email address you provide to us when subscribing to our newsletter through our “Join Newsletter” form on our website.</span></p>
+                                    <p style="margin-left: 0cm; mso-add-space: auto; text-align: justify;"><span lang="EN-GB">&nbsp;</span></p><p style="text-align: justify;"><span lang="EN-GB">&nbsp;</span></p><p style="margin-left: 0cm; mso-add-space: auto; text-align: justify;"><span lang="EN-GB">&nbsp;</span></p>
+                                    <p style="margin-left: 0cm; mso-add-space: auto; text-align: justify;"><span lang="EN-GB">&nbsp;</span></p>
+                                    <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">&nbsp;</span></p>
+                            </td>
+                            <td style="width: 113.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 13.7pt;" valign="top" width="119">
+                                <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">To provide you with all of our latest news, offers and activities or enable your attendance at an event.</span></p>
+                                <p style="margin-left: 0cm; mso-add-space: auto; text-align: justify;"><span lang="EN-GB">&nbsp;</span></p>
+                                <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">&nbsp;</span></p>
+                        </td>
+                        <td style="width: 117.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 13.7pt;" valign="top" width="123"><p style="margin-top: 12.0pt; text-align: justify;"><b><span lang="EN-GB">For our legitimate interests:</span></b></p>
+                            <p style="text-align: justify;"><span lang="EN-GB">Develop our network of contacts.</span></p>
+                            <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">Share relevant content and promote our activities with persons who have previously expressed an interest in TCS.</span></p>
+                            <p style="text-align: justify;"><b><span lang="EN-GB">Consent</span></b></p>
+                            <p style="text-align: justify;"><span lang="EN-GB">On the basis of the consent that you have provided us, where this is required.<b></b></span></p>
+                    </td>
+                </tr>
+                <tr style="mso-yfti-irow: 5; height: 13.7pt;">
+                <td style="width: 82.7pt; border: solid windowtext 1.0pt; border-top: none; mso-border-top-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 13.7pt;" valign="top" width="101"><p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">When you provide us with your CV to apply for a job at The Convenience Shop.</span></p>
+                </td>
+                <td style="width: 136.85pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 13.7pt;" valign="top" width="129">
+                    <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">Contact details that you provide to us when you request information about our services through our “Vacancies” form on our website, or through any other method of providing us with your CV. </span></p>
+                    <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">These include the Curriculum Vitae, including all information provided therein, and contact details such as personal email address and mobile phone number.</span></p>
+                    <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">Special conditions (which may relate to disability, learning, specific learning difficulty, health issue)</span></p>
+                    <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">Any other data that you may provide to us through the application process.</span></p>
+                </td>
+                <td style="width: 113.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 13.7pt;" valign="top" width="119"><p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">Process and follow up on your job application </span></p>
+                </td>
+                <td style="width: 117.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 13.7pt;" valign="top" width="123">
+                    <p style="margin-top: 12.0pt; text-align: justify;"><b><span lang="EN-GB">For our legitimate interests:</span></b></p>
+                    <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">Satisfy our staffing requirements and getting to know employees or potential employees.</span></p>
+                    <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">Making sure any potential recruit is suitably qualified for the position.</span></p>
+                    <p style="margin-top: 12.0pt; text-align: justify;"><b><span lang="EN-GB">Consent</span></b></p>
+                    <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">You are consenting us to process your personal data upon the submission of your personal data in the context of your application, which would include conducting necessary checks to satisfy our legitimate interests.</span></p><p style="margin-top: 12.0pt; text-align: justify;"><b><span lang="EN-GB">Performance of a legal obligation</span></b></p>
+                    <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">In satisfaction of our obligation to verify whether a candidate has the right to work in Malta.</span></p>
+                    <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">For more information please refer to our Job Applicant and Employee Privacy Notice on.</span></p>
+                </td>
+                </tr>
+                    <tr style="mso-yfti-irow: 6; height: 13.7pt;"><td style="width: 82.7pt; border: solid windowtext 1.0pt; border-top: none; mso-border-top-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 13.7pt;" valign="top" width="101"><p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">Making use of our website when seeking business opportunities. </span></p>
+                        <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">&nbsp;</span></p></td><td style="width: 136.85pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 13.7pt;" valign="top" width="129">
+                            <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">Contact details that you provide to us when you contact us via our website through our “Business Opportunities” form or via telephone. </span></p>
+                            <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">These include full name, email address, and contact number.</span></p>
+                </td>
+                <td style="width: 113.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 13.7pt;" valign="top" width="119">
+                    <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">Responding to your communications with us in order to provide you with the necessary information and commence negotiations.</span></p>
+                    <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">Updating and enhancing our contacts base </span></p>
+                </td>
+                <td style="width: 117.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 13.7pt;" valign="top" width="123">
+                    <p style="margin-top: 12.0pt; text-align: justify;"><b><span lang="EN-GB">For our legitimate interests:</span></b></p>
+                    <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">Getting to know the relative contact person who could result in a new business venture with us.</span></p>
+                    <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">&nbsp;</span></p>
+                    <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">Managing business communications.</span></p>
+                    <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">&nbsp;</span></p>
+                    <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">Responding to your communications with us.</span></p>
+            </td>
+            </tr>
+                <tr style="mso-yfti-irow: 7; height: 42.05pt;">
+                <td style="width: 82.7pt; border: solid windowtext 1.0pt; border-top: none; mso-border-top-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 42.05pt;" valign="top" width="101">
+                    <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">CCTV system</span></p>
+                    <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">&nbsp;</span></p>
+                    <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">&nbsp;</span></p>
+                </td>
+                <td style="width: 136.85pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 42.05pt;" valign="top" width="129">
+                    <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">Images of clients captured through the use of CCTV cameras which are installed within and outside our outlets/premises. </span></p>
+            </td>
+            <td style="width: 113.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 42.05pt;" valign="top" width="119">
+                <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">Used for security and monitoring purposes of clients and employees</span></p>
+            </td>
+            <td style="width: 117.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 42.05pt;" valign="top" width="123"><p style="margin-top: 12.0pt; text-align: justify;"><b><span lang="EN-GB">For our legitimate interests:</span></b></p>
+                    <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">Keeping our clients and employees safe and secure by preventing crime, preventing employee misconduct and, ensuring compliance with health and safety procedures.</span></p
+                >
+                <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span style="letter-spacing: 0px;">For more information please refer to our CCTV policy on</span></p>
+            </td>
+            </tr>
+            <tr style="mso-yfti-irow: 8; mso-yfti-lastrow: yes; height: 34.95pt;">
+            <td style="width: 82.7pt; border: solid windowtext 1.0pt; border-top: none; mso-border-top-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 34.95pt;" valign="top" width="101">
+                    <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">Use of our website</span></p>
+            </td>
+            <td style="width: 136.85pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 34.95pt;" valign="top" width="129"><p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">We may automatically collect technical information, including</span></p>
+                    <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">your Internet Protocol (IP) Address, browsing type, operating system and other information about your visits from your IP address.</span></p>
+                    <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">&nbsp;</span></p>
+                </td>
+            <td style="width: 113.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 34.95pt;" valign="top" width="119">
+                    <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">To be able to trace the computer used in cases of any kind of misuse of our website. </span></p>
+                    <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">&nbsp;</span></p>
+                    <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">To improve our website.</span></p>
+                    <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">&nbsp;</span></p>
+                    <p style="mso-add-space: auto; text-align: justify; margin: 12.0pt 0cm 10.0pt 0cm;"><span lang="EN-GB">To be able to report aggregate information to third parties.</span></p>
+            </td>
+            <td style="width: 117.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; mso-border-top-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 34.95pt;" valign="top" width="123"><p style="margin-top: 12.0pt; text-align: justify;"><b><span lang="EN-GB">For our legitimate interests:</span></b></p>
+                    <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">To ensure the security of our website</span></p>
+                    <p style="margin-top: 12.0pt; text-align: justify;"><span lang="EN-GB">To improve our website.<b></b></span></p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <p style="text-align: justify; line-height: normal;"><b><span lang="EN-GB" style="mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin; color: #5b9bd5; mso-themecolor: accent1;">&nbsp;</span></b></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB" style="color: black; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b>You agree to provide us personal data which is in all respects true, accurate and up to date and is not, in any respect, misleading, deceptive or inaccurate or likely to mislead or deceive.</span></b></p>
+    <p style="text-align: justify; line-height: normal;"><b><span lang="EN-GB">4. Use of cookies</span></b></p>
+    <p style="text-align: justify; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-GB" style="color: #171717; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">We use cookies to optimise the functionality of our website. A cookie is a small file that contains certain data such as the site’s name and unique user ID and is downloaded to and stored on your device when you visit a website. Cookies are generally used to make websites work more efficiently and enable website owners to gather information about the use of their website. Thus, they may be used for different purposes such as website analytics, targeted advertising, counting visitors and monitoring their behaviour.</span></p>
+    <p style="text-align: justify; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-GB" style="color: #171717; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">We use cookies to enable us to remember the personal settings of our users when visiting our website. </span><span lang="EN-GB">These cookies may obtain information about you, your device and your use of our website. </span></p>
+    <p style="text-align: justify; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-GB" style="color: #171717; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Most, but not all, of the cookies we use are automatically deleted from your computer when you leave our website or shortly afterwards. </span></p>
+    <p style="text-align: justify; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-GB" style="color: black; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b>Third party vendors, including Google, show adverts for Malaika-apartments.LTD on the internet. These vendors may use cookies to serve ads based on a user’s prior visits to Malaika-apartments.LTD. Users can opt out of Google’s use of cookies by visiting the Google advertising opt-out page.</b></span></p>
+    <p style="text-align: justify; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-GB" style="color: #171717; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;</span></p>
+    <p style="text-align: justify; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span lang="EN-GB" style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin; color: black; mso-fareast-language: EN-GB;">Opting Out:</span></b></p>
+    <p style="text-align: justify; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-GB" style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin; color: black; mso-fareast-language: EN-GB;">You can set your browser to not accept cookies, but this may limit your ability to use the services.</span></p>
+    <p style="line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-GB" style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin; color: black; mso-fareast-language: EN-GB;">For more information about for what we use cookies and how you can change your settings to suit you please refer to our Cookie Policy.</span></p>
+    <p style="text-align: justify; line-height: normal;"><b><span lang="EN-GB">5.&nbsp;&nbsp; With whom we share your data</span></b></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">It is necessary to share and transfer your data, both internally and externally.</span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB" style=" background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">For us to be able to provide you with a service, information needs to be transferred internally. For example, if you make a purchase on our website, the details of the purchase are sent to one of our outlets, so the order can be completed. </span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">We do not share your data with third parties, except with the following persons and in the indicated circumstances:</span></p>
+    <p style="text-align: justify; text-indent: -18.0pt; line-height: normal; mso-list: l2 level1 lfo4;"><!-- [if !supportLists]--><span lang="EN-GB">i.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><b><span lang="EN-GB">service providers</span></b><span lang="EN-GB"> – we may disclose your personal data to third party service providers that provide us with services. These include “Cool” – our delivery service provider which delivers our products to you, “apcopay” – our payment processor which processed your payment to us, cloud storage providers and website hosting providers.</span></p>
+    <p style="text-align: justify; text-indent: -18.0pt; line-height: normal; mso-list: l2 level1 lfo4;"><!-- [if !supportLists]--><span lang="EN-GB">ii.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]--><b><span lang="EN-GB">other third parties</span></b><span lang="EN-GB"> – where necessary to carry out your instructions.</span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">We may also disclose your personal data in response to any requests made from law enforcement agencies, government entities or public authorities, where we have a duty to disclose or share your personal data in order to observe any legal or regulatory obligation or request. </span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">We may also share your personal data with other parties in the event of a corporate reorganisation and/or disposition of our business, such as potential buyers of all or part of our business.</span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <p style="text-align: justify; line-height: normal;"><b><span lang="EN-GB">6.&nbsp; Where your personal data is held</span></b></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <p style="margin-left: 0cm; mso-add-space: auto; text-align: justify; line-height: normal;"><span lang="EN-GB">We hold your personal data at our offices and those of our third party service providers as described in clause 5 above. Some of these service providers may be located outside the European Economic Area (EEA). Any such transfers will be processed in accordance with specific EU and Maltese data protection laws as also provided in clause 7 below.</span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <p style="text-align: justify; line-height: normal;"><b><span lang="EN-GB">7. Transfers of your personal data outside the EEA</span></b></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <p style="margin-left: 0cm; mso-add-space: auto; text-align: justify; line-height: normal;"><span lang="EN-GB">Transfers of personal data outside the EEA are subject to specific EU and Maltese data protection laws. </span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <p style="text-align: justify; line-height: normal;"><b><span lang="EN-GB">8. Third Party Sites</span></b></p>
+    <p style="line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-GB" style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin; color: black; mso-fareast-language: EN-GB;">Our Site may contain links to other websites. Please note that we have no control over how your data is collected, stored, or used by other websites and we advise you to check the privacy policies of any such websites before providing any data to them. </span></p>
+    <p style="line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span lang="EN-GB" style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin; color: black; mso-fareast-language: EN-GB;">When making a purchase order through our Site you will be redirected to the website of our third-party payment processor’s website.</span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <p style="text-align: justify; line-height: normal;"><b><span lang="EN-GB">9. Personal Data retention period</span></b></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <p style="margin-left: 0cm; mso-add-space: auto; text-align: justify; line-height: normal;"><span lang="EN-GB">We will retain your personal data even after the completion of our services to you. We will need to keep your personal data after we have provided you with our services in order to comply with our record keeping requirements in terms of the law and to be able to respond to any questions, complaints or claims made by you. </span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <p style="margin-left: 0cm; mso-add-space: auto; text-align: justify; line-height: normal;"><span lang="EN-GB">Similarly, CCTV Surveillance footage derived from the CCTV system will be retained for a period of **** &nbsp;in order to ensure compliance with record keeping laws and to be able to address questions, complaints or claims made by you. </span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <p style="margin-left: 0cm; mso-add-space: auto; text-align: justify; line-height: normal;"><span lang="EN-GB">We will not collect more data than we require or retain your data for longer than necessary to fulfil the purposes outlined in this notice.</span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <p style="text-align: justify; line-height: normal;"><b><span lang="EN-GB">9. Your rights with respect to your Personal Data</span></b></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <p style="margin-left: 0cm; mso-add-space: auto; text-align: justify; line-height: normal;"><span lang="EN-GB">You have the following rights if you reside in the EU: </span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <table style="border: none;" border="1" width="100%" cellspacing="0" cellpadding="0">
+        <tbody>
+        <tr>
+        <td style="width: 462.1pt; border: solid windowtext 1.0pt; background: darkgrey; mso-background-themecolor: accent1; mso-background-themetint: 51; padding: 0cm 5.4pt 0cm 5.4pt;" valign="top" width="471"><p style="margin-left: 0cm; mso-add-space: auto; text-align: justify; mso-yfti-cnfc: 5;"><b><span lang="EN-GB">Right of Access </span></b></p>
+    </td>
+    </tr>
+        <tr>
+        <td style="width: 462.1pt; border: solid windowtext 1.0pt; border-top: none; mso-border-top-alt: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt;" valign="top" width="471"><p style="margin-left: 0cm; mso-add-space: auto; text-align: justify; mso-yfti-cnfc: 68;"><span lang="EN-GB">The right to access and be provided with a copy of your personal data.</span></p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <table style="border: none;" border="1" width="100%" cellspacing="0" cellpadding="0">
+     <tbody>
+        <tr>
+        <td style="width: 462.1pt; border: solid windowtext 1.0pt; background: darkgrey; mso-background-themecolor: accent1; mso-background-themetint: 51; padding: 0cm 5.4pt 0cm 5.4pt;" valign="top" width="471"><p style="margin-left: 0cm; mso-add-space: auto; text-align: justify; mso-yfti-cnfc: 5;"><b><span lang="EN-GB">Right to Rectification</span></b></p>
+    </td>
+    </tr>
+        <tr>
+        <td style="width: 462.1pt; border: solid windowtext 1.0pt; border-top: none; mso-border-top-alt: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt;" valign="top" width="471"><p style="margin-left: 0cm; mso-add-space: auto; text-align: justify; mso-yfti-cnfc: 68;"><span lang="EN-GB">The right to require us to correct any inaccurate personal data about you.</span></p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <table style="border: none;" border="1" width="100%" cellspacing="0" cellpadding="0">
+        <tbody>
+        <tr>
+        <td style="width: 462.1pt; border: solid windowtext 1.0pt; background: darkgrey; mso-background-themecolor: accent1; mso-background-themetint: 51; padding: 0cm 5.4pt 0cm 5.4pt;" valign="top" width="471"><p style="margin-left: 0cm; mso-add-space: auto; text-align: justify; mso-yfti-cnfc: 5;"><b><span lang="EN-GB">Right to be forgotten</span></b></p>
+    </td>
+    </tr>
+        <tr>
+        <td style="width: 462.1pt; border: solid windowtext 1.0pt; border-top: none; mso-border-top-alt: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt;" valign="top" width="471"><p style="margin-left: 0cm; mso-add-space: auto; text-align: justify; mso-yfti-cnfc: 68;"><span lang="EN-GB">The right to require us to delete your personal data in certain circumstances.</span></p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <table style="border: none;" border="1" width="100%" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+        <td style="width: 462.1pt; border: solid windowtext 1.0pt; background: darkgrey; mso-background-themecolor: accent1; mso-background-themetint: 51; padding: 0cm 5.4pt 0cm 5.4pt;" valign="top" width="471"><p style="margin-left: 0cm; mso-add-space: auto; text-align: justify; mso-yfti-cnfc: 5;"><b><span lang="EN-GB">Right to restriction of processing</span></b></p>
+    </td>
+    </tr>
+        <tr>
+        <td style="width: 462.1pt; border: solid windowtext 1.0pt; border-top: none; mso-border-top-alt: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt;" valign="top" width="471"><p style="margin-left: 0cm; mso-add-space: auto; text-align: justify; mso-yfti-cnfc: 68;"><span lang="EN-GB">The right to require us to restrict processing your personal data in certain circumstances<b>.</b></span></p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <table style="border: none;" border="1" width="100%" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+        <td style="width: 462.1pt; border: solid windowtext 1.0pt; background: darkgrey; mso-background-themecolor: accent1; mso-background-themetint: 51; padding: 0cm 5.4pt 0cm 5.4pt;" valign="top" width="471"><p style="margin-left: 0cm; mso-add-space: auto; text-align: justify; mso-yfti-cnfc: 5;"><b><span lang="EN-GB">Right to data portability</span></b></p>
+    </td>
+    </tr>
+        <tr>
+        <td style="width: 462.1pt; border: solid windowtext 1.0pt; border-top: none; mso-border-top-alt: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt;" valign="top" width="471"><p style="margin-left: 0cm; mso-add-space: auto; text-align: justify; mso-yfti-cnfc: 68;"><span lang="EN-GB">The right to receive your personal data which you provided to us, in a structured, commonly used and machine-readable format and the right to transmit that data to another data controller in certain circumstances.</span></p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <table style="border: none;" border="1" width="100%" cellspacing="0" cellpadding="0">
+        <tbody>
+        <tr>
+        <td style="width: 462.1pt; border: solid windowtext 1.0pt; background: darkgrey; mso-background-themecolor: accent1; mso-background-themetint: 51; padding: 0cm 5.4pt 0cm 5.4pt;" valign="top" width="471"><p style="margin-left: 0cm; mso-add-space: auto; text-align: justify; mso-yfti-cnfc: 5;"><b><span lang="EN-GB">Right to object</span></b></p>
+        </td>
+    </tr>
+        
+        <tr>
+            <td style="width: 462.1pt; border: solid windowtext 1.0pt; border-top: none; mso-border-top-alt: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt;" valign="top" width="471"><p style="margin-left: 0cm; mso-add-space: auto; text-align: justify; mso-yfti-cnfc: 68;"><span lang="EN-GB">The right to object to the processing of your personal data in certain circumstances which include continued processing of your data carried out for the purpose of our legitimate interests.</span></p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <table style="border: none;" border="1" width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td style="width: 462.1pt; border: solid windowtext 1.0pt; mso-border-alt: solid windowtext .5pt; background: darkgrey; mso-background-themecolor: accent1; mso-background-themetint: 51; padding: 0cm 5.4pt 0cm 5.4pt;" valign="top" width="471"><p style="margin-left: 0cm; mso-add-space: auto; text-align: justify; mso-yfti-cnfc: 5;"><b><span lang="EN-GB">Right not to be subject to automated processing</span></b></p>
+    </td>
+    </tr>
+    <tr>
+    <td style="width: 462.1pt; border: solid windowtext 1.0pt; border-top: none; mso-border-top-alt: solid windowtext .5pt; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt;" valign="top" width="471"><p style="margin-left: 0cm; mso-add-space: auto; text-align: justify; mso-yfti-cnfc: 68;"><span lang="EN-GB">The right not to be subject to a decision based solely on automated processing, including profiling, that produces legal effects concerning you or significantly affects you.</span></p>
+    </td>
+ </tr>
+ </tbody>
+ </table>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <p style="margin-left: 0cm; mso-add-space: auto; text-align: justify; line-height: normal;"><span lang="EN-GB" style="mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin; color: black; mso-themecolor: text1;">Should you require any further information on each of the above rights or would like to exercise any of them, please contact us on +255715391048 or send an email on cis@Malaika-apartments.com</span><span lang="EN-GB" style="mso-bidi-font-family: Calibri; mso-bidi-theme-font: minor-latin; color: #44546a; mso-themecolor: text2;">. </span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <p style="text-align: justify; line-height: normal;"><b><span lang="EN-GB">10. Protecting your personal data</span></b></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <p style="margin-left: 0cm; mso-add-space: auto; text-align: justify; line-height: normal;"><span lang="EN-GB">We have implemented security measures to protect your personal data that we collect from being used or accessed unlawfully or accidentally lost. We only grant access to your personal data to those persons who have a genuine need to access it. Those processing your personal data are subject to the duty of confidentiality.</span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <p style="text-align: justify; line-height: normal;"><b><span lang="EN-GB">11. Complaints</span></b></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <p style="margin-left: 0cm; mso-add-space: auto; text-align: justify; line-height: normal;"><span lang="EN-GB">We would like to resolve any concern that you may have about the processing of your personal data directly with you. However, you have the right to lodge a complaint with a supervisory authority, in the EU state in which you work, reside or where the alleged infringement of data protection laws took place. The supervisory authority in Malta is the Office of the Information and Data Protection Commissioner which may be contacted at https://idpc.org.mt/en/Pages/contact/complaints.aspx. </span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <p style="text-align: justify; line-height: normal;"><span lang="EN-GB">&nbsp;</span></p>
+    <p style="margin-left: 0cm; mso-add-space: auto; text-align: right; line-height: normal;" align="right"><b><span lang="EN-GB">Last updated on 28 April 2020</span></b></p>
+
+
+    </div>
+
+      <footer class="py-5" style="padding-left: 2%; padding-right: 2%;background-color: darkgrey;">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Home</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="productA.html" class="nav-link p-0 text-body-secondary">Apartments</a></li>
+                <li class="nav-item mb-2"><a href="productB.html" class="nav-link p-0 text-body-secondary">Bakery</a></li>
+                <li class="nav-item mb-2"><a href="productM.html" class="nav-link p-0 text-body-secondary">Mini-supermarket</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Places</a></li>
+              <li class="nav-item mb-2"><a href="about us.html" class="nav-link p-0 text-body-secondary">About us</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Policies and Conditions</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Legal notice</a></li>
+              <li class="nav-item mb-2"><a href="privacy policy.html" class="nav-link p-0 text-body-secondary">Private policy</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cookie policy</a></li>
+              <li class="nav-item mb-2"><a href="terms of use.html" class="nav-link p-0 text-body-secondary">Terms of use</a></li>
+              <li class="nav-item mb-2"><a href="terms and conditions.html" class="nav-link p-0 text-body-secondary">Terms and Conditions</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Need Help?</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="C:\Users\25571\Desktop\project2\contact us.html" class="nav-link p-0 text-body-secondary">Contact us</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3" style="background-color: darkgrey;">
+            <form action="/action_page.php" onsubmit="myFunction()">
+              <h5><br>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-dark" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>© 2023 Malaika Apartments.LTD, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </div>
+      </footer>
+      <script>
+      function myFunction() {
+        alert("Thank you for registering.");
+      }
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

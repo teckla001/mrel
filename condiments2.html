@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PRODUCT-MINI-MARKET</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body style="background-color: grey;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarsExample08" style="display: flex; justify-content: end;">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a>
+              <!--button trigger model-->
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Register
+             </button>
+            </a>
+            </li>
+            &nbsp; &nbsp;
+            <li class="nav-item">
+              <a class="nav-link " href="login.html">Login</a>
+            </li>
+            &nbsp; 
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="inquiry.html">Inquiry</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="apartment.jpg" alt="logo" width="60" height="60"> Malaika Apartments.LTD</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about us.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact us.html">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productA.html">Apartments</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Mini-supermarket
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item active" href="productM.html">Products</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Bakery
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="productB.html">Products</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li> -->
+            <!-- Button trigger modal -->
+            <br>
+
+       <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: white;">Register</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="color: white;">
+        <form class="row g-3" action="welcome.php" method="post" onsubmit="myFunction()">
+          <div class="row g-3">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name*" aria-label="First name" name="name" required>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name*" aria-label="Last name" name="lname" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email*</label>
+            <input type="email" class="form-control" id="inputEmail4" name="email" required>
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Password*</label>
+            <input type="password" class="form-control" id="inputPassword4" name="password" required>
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Address*</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" name="address" required>
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" name="address2">
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">District</label>
+            <input type="text" class="form-control" id="inputCity" name="district">
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">Region</label>
+            <select id="inputState" class="form-select" name="region">
+              <option selected>Choose</option>
+              <option>Dar-es-salaam</option>
+              <option>Moshi</option>
+              <option>Pwani</option>
+              <option>Arusha</option>
+              <option>Mwanza</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip" name="zip">
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="learn"></textarea>
+            <label for="floatingTextarea2"> Where did you learn about Malaika apartments</label>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions and any new notifications regarding Malaika apartments.
+                </label>
+                <div class="invalid-feedback">
+                You must agree before submitting.
+                </div>
+             </div>
+           </div>
+           <div class="col-12">
+            <button class="btn btn-secondary w-70 py-2" type="submit">Register</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+           </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-secondary" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <hr class="my-4">
+     <div style="padding-left: 1%; padding-right: 2%;">
+    <table class="table">
+      <div style="background-color: grey;">
+      <tbody>
+        <tr>
+          <td style="background-color: grey;"><div style="padding-left: 2%;">
+            <table>
+              <tbody>
+                <tr>
+                  <td style="background-color: grey;">
+                    <h4 class="ywcca_widget_title">Product Categories</h4>
+                    <hr class="my-4">
+                    <h5 class="ywcca_widget_title">Retail</h5>
+                    <nav class="nav">
+                        <table>
+                            <tbody>
+                              <tr><td>
+                                <a class="nav-link" aria-current="page" href="productM.html" style="color: black;">Dry foods</a>
+                                </td>
+                                </tr>
+                                <tr><td>
+                                <a class="nav-link active" href="frozen-foods.html" style="color: black;">Frozen foods</a>
+                                </td>
+                                </tr>
+                                <tr><td>
+                                <a class="nav-link" href="condiments.html" style="color: black;">Condiments</a>
+                                </td>
+                                </tr>
+                                <tr><td>
+                                  <a class="nav-link" aria-current="page" href="spices.html" style="color: black;">Spices</a>
+                                  </td>
+                                  </tr>
+                                  <tr><td>
+                                  <a class="nav-link" href="drinks.html" style="color: black;">Drinks</a>
+                                  </td>
+                                  </tr>
+                                  <tr><td>
+                                  <a class="nav-link" href="beer.html" style="color: black;">Beer</a>
+                                  </td>
+                                  </tr>
+                              <tr><td>
+                          <a class="nav-link" aria-current="page" href="liquoir.html" style="color: black;">Liquoir</a>
+                          </td>
+                          </tr>
+                          <tr><td>
+                          <a class="nav-link" href="baby-supplies.html" style="color: black;">Baby supplies</a>
+                          </td>
+                          </tr>
+                          <tr><td>
+                          <a class="nav-link" href="beauty-supplies.html" style="color: black;">Beauty supplies</a>
+                          </td>
+                          </tr>
+                          <tr><td>
+                            <a class="nav-link" href="cleaning-supplies.html" style="color: black;">Cleaning supplies</a>
+                            </td>
+                            </tr>
+                            <tr><td>
+                            <a class="nav-link" href="stationery.html" style="color: black;">Stationery</a>
+                            </td>
+                            </tr>
+                            <tr><td>
+                            <a class="nav-link" href="#" style="color: black;">Dairy</a>
+                            </td>
+                            </tr>
+                          <tr><td>
+                          <a class="nav-link" href="#" style="color: black;">Feminine products</a>
+                          <br>
+                          </td>
+                          </tr>
+                          </tbody>
+                          </table>
+                        </nav>
+                      </td>
+                      </tr>
+                  <tr>
+                    <td>
+                      <h5 class="ywcca_widget_title">Wholesale</h5>
+                      <nav class="nav">
+                        <table>
+                          <tbody>
+                            <tr><td>
+                        <a class="nav-link" aria-current="page" href="#" style="color: black;">Beer</a>
+                        </td>
+                        </tr>
+                        <tr><td>
+                        <a class="nav-link" href="#" style="color: black;">Liquor</a>
+                        </td>
+                        </tr>
+                        </tbody>
+                        </table>
+                      </nav>
+                    
+                    </div>
+                  </tr>
+              </tbody>
+            </table>
+             </div>
+             
+        </td>
+          <td style="background-color: grey;">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td style="background-color: grey;">
+                    <div class="card" style="width: 18rem;">
+                      <img src="g1.jpeg" class="card-img-top" alt="m. y. soysauce large" style="padding-top: 1%;">
+                      <div class="card-body">
+                        <h5 class="card-title">SOY SAUCE-SMALL</h5>
+                        <p class="card-text">Tshs. 3,500/= inc. tax</p>
+                        <a href="#" class="btn btn-dark" style="display: flex; justify-content: center; margin-left: 5%; margin-right: 5%;">Go to cart</a>
+                      </div>
+                    </div>
+                  </td>
+                  <td style="background-color: grey;">
+                    <div class="card" style="width: 18rem;">
+                      <img src="apartment.jpg" class="card-img-top" alt="m. y. soysauce" style="padding-top: 0%;">
+                      <div class="card-body">
+                        <h5 class="card-title">SOY SAUCE-LARGE</h5>
+                        <p class="card-text">Tshs. 5,000/= inc. tax</p>
+                        <a href="#" class="btn btn-dark" style="display: flex; justify-content: center; margin-left: 5%; margin-right: 5%;">Go to cart</a>
+                      </div>
+                    </div>
+                  </td>
+                  <td style="background-color: grey;">
+                    <div class="card" style="width: 18rem;">
+                      <img src="g3.jpeg" class="card-img-top" alt="oyster sauce" style="padding-top: 0%;">
+                      <div class="card-body">
+                        <h5 class="card-title">OYSTER SAUCE</h5>
+                        <p class="card-text">Tshs. 3,000/= inc. tax</p>
+                        <a href="#" class="btn btn-dark" style="display: flex; justify-content: center; margin-left: 5%; margin-right: 5%;">Go to cart</a>
+                      </div>
+                    </div>
+                  </td>
+                  <td style="background-color: grey;">
+                    <div class="card" style="width: 18rem;">
+                      <img src="apartment.jpg" class="card-img-top" alt="AG ketchup" style="padding-top: 0%;">
+                      <div class="card-body">
+                        <h5 class="card-title">REDGOLD-MANGO PICKLE</h5>
+                        <p class="card-text">Tshs. 3,000/= inc. tax</p>
+                        <a href="#" class="btn btn-dark" style="display: flex; justify-content: center; margin-left: 5%; margin-right: 5%;">Go to cart</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="background-color: grey;">
+                    <div class="card" style="width: 18rem;">
+                      <img src="g4.jpeg" class="card-img-top" alt="CH" style="padding-top: 0%; width: 70%;">
+                      <div class="card-body">
+                        <h5 class="card-title">BONGO PILIPILI-GARLIC</h5>
+                        <p class="card-text">Tshs. 6,000/= inc. tax</p>
+                        <a href="cart.html" class="btn btn-dark" style="display: flex; justify-content: center; margin-left: 5%; margin-right: 5%;">Go to cart</a>
+                      </div>
+                    </div>
+                  </td>
+                  <td style="background-color: grey;">
+                    <div class="card" style="width: 18rem;">
+                      <img src="g5.jpeg" class="card-img-top" alt="CH" style="padding-top: 0%;width: 70%;">
+                      <div class="card-body">
+                        <h5 class="card-title">BONGO PILIPILI-UKWAJU</h5>
+                        <p class="card-text">Tshs. 6,000/= inc. tax</p>
+                        <a href="cart.html" class="btn btn-dark" style="display: flex; justify-content: center; margin-left: 5%; margin-right: 5%;">Go to cart</a>
+                      </div>
+                    </div>
+                  </td>
+                  <td style="background-color: grey;">
+                    <div class="card" style="width: 18rem;">
+                      <img src="g6.jpeg" class="card-img-top" alt="CH" style="padding-top: 0%; width: 70%;">
+                      <div class="card-body">
+                        <h5 class="card-title">BONGO PILIPILI-CHILI</h5>
+                        <p class="card-text">Tshs. 6,000/= inc. tax</p>
+                        <a href="cart.html" class="btn btn-dark" style="display: flex; justify-content: center; margin-left: 5%; margin-right: 5%;">Go to cart</a>
+                      </div>
+                    </div>
+                  </td>
+                  <td style="background-color: grey;">
+                    <div class="card" style="width: 18rem;">
+                      <img src="g7.jpeg" class="card-img-top" alt="CA" style="padding-top: 0%; width: 70%;">
+                      <div class="card-body">
+                        <h5 class="card-title">BONGO PILIPILI</h5>
+                        <p class="card-text">Tshs. 6,000/= inc. tax</p>
+                        <a href="cart.html" class="btn btn-dark" style="display: flex; justify-content: center; margin-left: 5%; margin-right: 5%;">Go to cart</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="background-color: grey;">
+                    <div class="card" style="width: 18rem;">
+                      <img src="apartment.jpg" class="card-img-top" alt="P ketchup small" style="padding-top: 0%; width: 91%;">
+                      <div class="card-body">
+                        <h5 class="card-title">REDGOLD TOMATO SAUCE-LARGE</h5>
+                        <p class="card-text">Tshs. 2,000/= inc. tax</p>
+                        <a href="cart.html" class="btn btn-dark" style="display: flex; justify-content: center; margin-left: 5%; margin-right: 5%;">Go to cart</a>
+                      </div>
+                    </div>
+                  </td>
+                  <td style="background-color: grey;">
+                    <div class="card" style="width: 18rem;">
+                      <img src="apartment.jpg" class="card-img-top" alt="blueband medium" style="padding-top: 0%; width: 91%;">
+                      <div class="card-body">
+                        <h5 class="card-title">REDGOLD TOMATO SAUCE-SMALL</h5>
+                        <p class="card-text">Tshs. 600/= inc. tax</p>
+                        <a href="cart.html" class="btn btn-dark" style="display: flex; justify-content: center; margin-left: 5%; margin-right: 5%;">Go to cart</a>
+                      </div>
+                    </div>
+                  </td>
+                  <td style="background-color: grey;">
+                    <div class="card" style="width: 18rem;">
+                      <img src="apartment.jpg" class="card-img-top" alt="blueband large" style="padding-top: 0%;">
+                      <div class="card-body">
+                        <h5 class="card-title">REDGOLD MWENDOKASI</h5>
+                        <p class="card-text">Tshs. 2,000/= inc. tax</p>
+                        <a href="cart.html" class="btn btn-dark" style="display: flex; justify-content: center; margin-left: 5%; margin-right: 5%;">Go to cart</a>
+                      </div>
+                    </div>
+                  </td>
+                  <td style="background-color: grey;"><div class="card" style="width: 18rem;">
+                    <img src="apartment.jpg" class="card-img-top" alt="blueband small" style="padding-top: 0%;">
+                    <div class="card-body">
+                      <h5 class="card-title">REDGOLD-MIXED PICKLE</h5>
+                      <p class="card-text">Tshs. 3,000/= inc. tax</p>
+                      <a href="cart.html" class="btn btn-dark" style="display: flex; justify-content: center; margin-left: 5%; margin-right: 5%;">Go to cart</a>
+                    </div>
+                  </div>
+                </td>
+                </tr>
+              </tbody>
+            </table>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item disabled">
+                    <a class="page-link disabled" href="#" aria-label="Previous" style="color: whitesmoke; background-color: grey;">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="condiments.html" style="color: whitesmoke; background-color: grey;">1</a></li>
+                  <li class="page-item"><a class="page-link" href="condiments2.html"style="color: whitesmoke; background-color: grey;" >2</a></li>
+                  <li class="page-item"><a class="page-link" href="condiments3.html"style="color: whitesmoke; background-color: grey;" >3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next"style="color: whitesmoke; background-color: grey;" >
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+          </td>
+        </tr>
+      </tbody>
+      </div>
+    </table>
+    </div>
+     <br>
+      <footer class="py-5" style="padding-left: 2%; padding-right: 2%;background-color: darkgrey;">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Home</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="productA.html" class="nav-link p-0 text-body-secondary">Apartments</a></li>
+                <li class="nav-item mb-2"><a href="productB.html" class="nav-link p-0 text-body-secondary">Bakery</a></li>
+                <li class="nav-item mb-2"><a href="productM.html" class="nav-link p-0 text-body-secondary">Mini-supermarket</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Places</a></li>
+              <li class="nav-item mb-2"><a href="about us.html" class="nav-link p-0 text-body-secondary">About us</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Policies and Conditions</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Legal notice</a></li>
+              <li class="nav-item mb-2"><a href="privacy policy.html" class="nav-link p-0 text-body-secondary">Private policy</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cookie policy</a></li>
+              <li class="nav-item mb-2"><a href="terms of use.html" class="nav-link p-0 text-body-secondary">Terms of use</a></li>
+              <li class="nav-item mb-2"><a href="terms and conditions.html" class="nav-link p-0 text-body-secondary">Terms and Conditions</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Need Help?</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="C:\Users\25571\Desktop\project2\contact us.html" class="nav-link p-0 text-body-secondary">Contact us</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3" style="background-color: darkgrey;">
+            <form action="/action_page.php" onsubmit="myFunction()">
+              <h5><br>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-dark" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>© 2023 Malaika Apartments.LTD, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </div>
+      </footer>
+      <script>
+      function myFunction() {
+        alert("Thank you for registering.");
+      }
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Terms and Conditions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body style="background-color: grey;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarsExample08" style="display: flex; justify-content: end;">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a>
+                <!--button trigger model-->
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Register
+               </button>
+              </a>
+              </li>
+              &nbsp; &nbsp;
+              <li class="nav-item">
+                <a class="nav-link " href="login.html">Login</a>
+              </li>
+              &nbsp; 
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="inquiry.html">Inquiry</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="apartment.jpg" alt="logo" width="60" height="60"> Malaika Apartments.LTD</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about us.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact us.html">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productA.html">Apartments</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Mini-supermarket
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item active" href="productM.html">Products</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Bakery
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="productB.html">Products</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li> -->
+            <!-- Button trigger modal -->
+            <br>
+
+       <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: white;">Register</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="color: white;">
+        <form class="row g-3" action="welcome.php" method="post" onsubmit="myFunction()">
+          <div class="row g-3">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name*" aria-label="First name" name="name" required>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name*" aria-label="Last name" name="lname" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email*</label>
+            <input type="email" class="form-control" id="inputEmail4" name="email" required>
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Password*</label>
+            <input type="password" class="form-control" id="inputPassword4" name="password" required>
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Address*</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" name="address" required>
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" name="address2">
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">District</label>
+            <input type="text" class="form-control" id="inputCity" name="district">
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">Region</label>
+            <select id="inputState" class="form-select" name="region">
+              <option selected>Choose</option>
+              <option>Dar-es-salaam</option>
+              <option>Moshi</option>
+              <option>Pwani</option>
+              <option>Arusha</option>
+              <option>Mwanza</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip" name="zip">
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="learn"></textarea>
+            <label for="floatingTextarea2"> Where did you learn about Malaika apartments</label>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions and any new notifications regarding Malaika apartments.
+                </label>
+                <div class="invalid-feedback">
+                You must agree before submitting.
+                </div>
+             </div>
+           </div>
+           <div class="col-12">
+            <button class="btn btn-secondary w-70 py-2" type="submit">Register</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+           </div>
+           </div>
+         </form>
+          </div>
+         </div>
+         </div>
+         </div>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-secondary" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <div style="padding-left: 2%; padding-right: 2%; padding-top: 1%;">
+     <header class="page-header">
+        <h1 class="page-title" style="display: flex; justify-content: center;">Terms and Conditions</h1>		
+     </header>
+
+    <hr class="my-4">
+    
+    <div>
+    <p><strong>About us</strong></p>
+    <p>www.malaika-apartments.LTD.com is a Website operated by Malaika apartmentsLimited (“TCS”, “we” or “us”), a Tanzanian company with company registration number C ##### and with registered office at Mkwajuni, makongo juu, dar-es-salaam, Tanzania.</p>
+    <p>TCS trades from different premises all over dar-es-salaam, and is also offering its products for sale through its Website.</p>
+    <p><strong><u>Terms of Sale for Online Purchases</u></strong></p>
+    <p><strong>1 Use of Site for Online Orders</strong></p>
+    <p style="padding-left: 15px;">1.1 These are the Terms and Conditions that apply when you are buying online products from theconvenienceshop.com.&nbsp; Please read these Terms and Conditions carefully before ordering any products from the Website, as they affect your rights and liabilities under the law.<strong> &nbsp;</strong>They should be read in conjunction with the&nbsp;‘Use of Website’ Terms and Conditions and our <a style="color: darkolivegreen;" href="#">Privacy Notice</a>.&nbsp; You should understand that by ordering any of our products, you agree to be bound by these Terms and Conditions.&nbsp; If you do not agree to these Terms and Conditions, then you may not order any products from this Website</p>
+    <p style="padding-left: 15px;">1.2&nbsp; We reserve the right to amend these Terms and Conditions.&nbsp;&nbsp;You are asked to check periodically for changes.&nbsp;&nbsp;If we make any changes to these terms, we will let you know as soon as possible by posting the changes on our Website and updating the date below.&nbsp; It is your responsibility to read the terms and conditions on each occasion you use this website and your continued use of the website shall signify your acceptance to be bound by the latest terms and conditions.</p>
+    <p style="padding-left: 15px;">1.3&nbsp; If you have any questions relating to these Terms and Conditions please call us on our freephone 80074600 from Monday to Friday excluding public holidays between 8:00 and 16:00 or send us an email on <a style="color: darkolivegreen;" href="#">  @Malaika-apartments.com</a>&nbsp;or&nbsp;<a style="color: darkolivegreen;" href="contact us.html">Contact Us</a>&nbsp;by using the form on our Website.</p>
+    <p><strong>2 </strong><strong>Registration</strong></p>
+    <p style="padding-left: 15px;">2.1&nbsp; You must be 18 years or over to buy any products on the Website.</p>
+    <p style="padding-left: 15px;">2.2 To make an online purchase on the Website you will be required to Register as a Registered User of the Website after completing a one-time registration process.</p>
+    <p style="padding-left: 15px;">2.3 You must read and accept these Terms and Conditions.</p>
+    <p style="padding-left: 15px;">2.4 In order to complete full registration as a Registered User, you must provide us with all the mandatory contact details which we request from you.&nbsp; You must give us your real contact details and make sure they are correct.&nbsp; You must immediately update your personal details, such as your telephone number or email address, if there are any changes thereto.</p>
+    <p style="padding-left: 15px;">2.5 It is important that you provide us with your email address (that is easily accessible by you) and your phone number so that we will be able to supply you with important information such as order confirmations. By registering on the Website to purchase our products online, you accept that your email address and phone number may be used to supply you with such information.</p>
+    <p style="padding-left: 15px;">2.7 Registration data and certain other information about you is used in accordance with our <a style="color: darkolivegreen;" href="#"> Privacy Policy.</a>&nbsp; By using theconvenienceshop.com, you acknowledge that you have read and understood our <a style="color: darkolivegreen;" href="#">Privacy Policy</a> .</p>
+    <p style="padding-left: 15px;">2.8 When you register as a Registered User you will be asked to create a password. You must keep this password confidential and must not disclose it or share it with anyone.&nbsp; You are and will be responsible for all orders that occur or are submitted under your password.&nbsp; If you know or suspect that someone else knows your password, you should change the password immediately.</p>
+    <p style="padding-left: 15px;">2.9 We reserve the right to decline a new registration or suspend or cancel your registration at any time and at our sole discretion and to terminate your access to all or part of this service with or without notice.</p>
+    <p style="padding-left: 15px;">2.10 The suspension or cancellation of your registration and your right to use the Website shall not affect either party’s rights or liabilities.</p>
+    <p style="padding-left: 15px;">2.11 When using our online service you accept the need to have your credit or debit card details registered with a third party payment processor before placing an order.&nbsp; These details are not held by TCS but are held in an encrypted form by the payment processor and will only be used for payment on account and/or payment of goods and services received by you using our online service.</p>
+    <p style="padding-left: 15px;">2.12 When you choose the&nbsp;&nbsp;delivery option you also accept the need for TCS to share your name, surname, mobile number, email address and residence address with its third-party delivery service providers ‘E-Deliv’ to be able to deliver your order to your preferred address.&nbsp; For the avoidance of doubt, this does not apply to users opting to collect their order from their preferred outlet.</p>
+    <p><strong>3 </strong><strong>Contract</strong></p>
+    <p style="padding-left: 15px;">3.1 After placing your order, you will receive an email confirming that your order has been received.&nbsp; Your credit card or debit card will be charged through a third-party payment gateway system at the time of checkout.</p>
+    <p style="padding-left: 15px;">3.2 All orders are subject to acceptance by TCS by sending you an e-mail confirming that the order has been processed and accepted.&nbsp; At this stage, the contract between us is formed.&nbsp; If, for any reason, we will not be able to fulfil your order, we will inform you as soon as possible and provide you a full refund.</p>
+    <p style="padding-left: 15px;">3.3 If you would like to contact us regarding an order, you may do so either by calling on our freephone 80074600 from Monday to Friday excluding public holidays between 8:00 and 16:00 or by sending us an email on&nbsp;<a href="@#" style="color: darkolivegreen;">cis@Malaika-apartments.com</a>&nbsp;or&nbsp;by completing the&nbsp;&nbsp;Contact Us&nbsp;&nbsp;form on our Website.</p>
+    <p><strong>4 Prices, Charges and Payment</strong></p>
+    <p style="padding-left: 15px;">4.1 Prices include VAT but exclude delivery costs, which will be added to the total amount due before you place your order.&nbsp; You are given the option of correcting any errors before you confirm your order to us.</p>
+    <p style="padding-left: 15px;">4.2 Prices are liable to change at any time, but changes will not affect orders in respect of which we have already sent you an order confirmation.</p>
+    <p style="padding-left: 15px;">4.3&nbsp; You will be charged the marked price for weighted product, such as delicatessen products.&nbsp; However, we would like to bring to your attention that for such products, the weight indicated on our Website is an indicative weight and therefore, you agree that the weight of such product may vary.&nbsp; This notwithstanding we promise to use our best endeavours to give you a product which will be as close as possible to the indicated weight.&nbsp;</p>
+    <p style="padding-left: 15px;">4.4 All payments for products shall be made in full at the time of placing the order and proceeding to checkout.&nbsp; Payment must be made by credit or debit card through our third-party payment processor.</p>
+    <p style="padding-left: 15px;">4.5 When you select the delivery option, a delivery fee of Tshs. 3,000/= (inc VAT) is charged on every order made through our Website.&nbsp; Double the delivery fee will apply on orders less than tshs.50,000/= .</p>
+    <p style="padding-left: 15px;">4.6 The products ordered through the Site shall be at your risk from the time of delivery. You, or someone aged 18 or over authorised by you, must be available to inspect the goods at the time of delivery</p>
+    <p style="padding-left: 15px;">5.1 If there are any products in your order which are not in stock, we will use our reasonable endeavours to contact you on the phone number you provided us.&nbsp; In such circumstances we may provide you with any of the following options:</p>
+    <p><strong>5 Availability</strong></p>
+    <p style="padding-left: 15px;">5.1 If there are any products in your order which are not in stock, we will use our reasonable endeavours to contact you on the phone number you provided us.&nbsp; In such circumstances we may provide you with any of the following options:</p>
+    <p style="padding-left: 30px;">i. To amend the order by cancelling the unavailable products,</p>
+    <p style="padding-left: 30px;">ii. To add additional products to replace the unavailable items and re-send the updated order via email; or</p>
+    <p style="padding-left: 30px;">iii. To cancel the order completely and allow a full refund.</p>
+    <p style="padding-left: 15px;">5.2 If there are any products in your order which are not in stock and we do not manage to contact you, your order will be processed with only those products in stock.</p>
+    <p style="padding-left: 15px;">5.3 If following the above, there is a difference in the total paid price (i) we will request your bank to release the funds due to you, which request will be processed within 10 working days in the case the overall price is lower than what you have already paid or (ii) you will be requested to accept the difference in total price through an email confirmation, if the price is higher .&nbsp; <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></p>
+    <p><strong>6&nbsp;</strong> <strong>Delivery and Pick Up</strong></p>
+    <p style="padding-left: 15px;">6.1 While completing your order you will be requested to select whether you would like your order to be delivered to your chosen address or to be collected from one of our stores.</p>
+    <p style="padding-left: 15px;">6.2 ‘Pick up’ is available from our outlet situated in St Paul’s Street Naxxar.&nbsp; If you choose the ‘Pick up’ option, you will be requested to select your preferred time-slot within which you commit to collect your order.&nbsp;&nbsp;You agree to collect your order at the time you selected when submitting your order. Orders are available for pick up between 9:00 and 19:30.</p>
+    <p style="padding-left: 15px;">6.3 If the ‘delivery’ option is selected, we will deliver your order via a third-party delivery service provider from Monday to Sunday including public holidays.&nbsp;&nbsp;We use our reasonable endeavours to deliver online orders placed:</p>
+      <p style="padding-left: 30px;">i. Between 8:30 and 19:30 within 2 hours from receipt of our confirmation that your order has been accepted and processed;</p>
+      <p style="padding-left: 30px;">ii.Between 19:31 and 23:59 in the morning of the following day between 9:00 and 12:00, and</p>
+      <p>We deliver orders from Monday to Sunday between 9:00 and 21:00.</p>
+    <p style="padding-left: 15px;">6.4 Upon arrival to your chosen address, the delivery person or TCS store manager will call you on the mobile number you provided us. If unsuccessful and you do not respond to the call your order will be cancelled and returned to TCS.&nbsp; In such event, TCS will charge you for all related costs and expenses and will refund you the difference in 2-5 working days.</p>
+    <p style="padding-left: 15px;">6.5 If TCS fails to deliver&nbsp;&nbsp;the products, it has no liability for any failure to deliver the products to the extent that such failure is caused by a Force Majeure Event or the Customer’s failure to provide the Supplier with adequate delivery instructions or any other instructions that are relevant to the supply of the products.</p>
+    <p style="padding-left: 15px;">6.6 During the Covid-19 public health outbreak, all delivered items will be left outside on the doorstep to ensure social distancing.</p>
+    <p><strong>7 Risk and Title</strong></p>
+    <p style="padding-left: 15px;">7.1 The products ordered through the Site shall be at your risk from the time of delivery. You, or someone aged 18 or over authorised by you, must be available to inspect the goods at the time of delivery.</p>
+    <p style="padding-left: 15px;">7.2 Ownership of the items will only pass to you when we receive the full payment of the sums due including delivery charges.</p>
+    <p style="padding-left: 15px;">7.3 Food goods are supplied at the temperature appropriate to that food.&nbsp; Goods will be delivered in good condition and we cannot accept responsibility where they have been inappropriately stored or handled following delivery to you. We will not be responsible for any loss or damage caused to the goods after delivery.</p>
+    <p><strong>8 Return and Refund Policy</strong></p>
+    <p><strong>NOTE: During the Covid-19 public health outbreak, we are temporary suspending product returns for the safety of our customers and employees.&nbsp;</strong><strong>Therefore no returns will be accepted during the Covid-19 public health outbreak.</strong></p>
+    <p style="padding-left: 15px;">8.1 If you are contracting as a consumer, you may cancel a contract within 14 calendar days beginning on the day after you received the products by calling us on the number listed on the receipt which will be attached to your shopping bag. In such instances you must return the products to us without delay at the outlet listed on the same receipt in an unopened, unused and undamaged condition. You are responsible for paying the cost of returning the products.</p>
+    <p style="padding-left: 15px;">8.2 You are responsible to provide us with proof of having purchased the goods online from our Website and that you have cancelled the sale within the 14-day time limit. We shall not accept returns, except upon presentation of the same receipt attached to your shopping bag.</p>
+    <p style="padding-left: 15px;">8.3&nbsp; You have a legal obligation to take good care of the products while they are in your possession.</p>
+    <p style="padding-left: 15px;">8.4 In the case of cancellation in terms of clauses 8.1 and 8.2 you will receive a full refund of the price paid for the products (please refer to clause 8.9 below).</p>
+    <p style="padding-left: 15px;">8.5 Except where a Product is defective, you may not cancel a contract for the supply of any of the following:</p>
+    <p style="padding-left: 30px;">i. Sale of products that are perishable and therefore liable to deteriorate or expire rapidly, such as refrigerated products, fresh foods, flowers etc.</p>
+    <p style="padding-left: 30px;">ii. Sale of sealed goods which are not suitable for return due to health protection or hygiene reasons and were unsealed after delivery.</p>
+    <p style="padding-left: 30px;">iii.&nbsp;&nbsp;&nbsp;Newspapers and Magazines.</p>
+    <p style="padding-left: 15px;">8.6&nbsp; When you return a product to us because you have cancelled the contract between us within the 14-day cooling-off period referred to in clause 8.1 above, we will process the refund without undue delay upon receipt of goods.&nbsp;&nbsp;&nbsp;In this case, we will refund the price of the Product in full, including the cost of sending the product to you. However, you will be responsible for the cost of returning the product to us.</p>
+    <p style="padding-left: 15px;">8.7 When a product is defective or is past its sell date, we require photographic evidence from you to demonstrate that the product is indeed defective or past its sell date and to be sent to us upon delivery. The defective product is to be brought to TCS outlet from where the product has been dispatched and which would be indicated on your receipt. In the case of perishable products these should be returned within 1 hour from collection or delivery, for all other products they should be returned within the 1 day from collection or delivery.</p>
+    <p style="padding-left: 15px;">8.8 When you return a product to us because it is defective, we will examine the returned product and if we are satisfied that the product is defective or past its sell date, we will replace it or provide a credit note if the same product is not in stock.</p>
+    <p style="padding-left: 15px;">8.10 TCS reserves the right to dispatch the product ordered by you through this Website, from any one of its outlets. You will find the details of the outlet from where your order is dispatched on the receipt attached to your shopping bag. You may find the details of our shop locations under the section Locations.</p>
+    <p style="padding-left: 15px;">8.10 TCS reserves the right to dispatch the product ordered by you through this Website, from any one of its outlets. You will find the details of the outlet from where your order is dispatched on the receipt attached to your shopping bag. You may find the details of our shop locations under the section Locations.</p>
+    <p><strong>9 Liability</strong></p>
+    <p style="padding-left: 15px;">9.1 Our liability for losses you suffer as a result of us breaking the Terms and Conditions is strictly limited to the purchase price of the product you purchased.</p>
+    <p style="padding-left: 15px;">9.2 We are not responsible for indirect losses that you may suffer when buying our products online however arising and whether caused by tort (including negligence), breach of contract or otherwise.</p>
+    <p><strong>10 </strong><strong>Force Majeure Event</strong></p>
+    <p style="padding-left: 15px;">10.1&nbsp; We will not be liable or responsible for any failure to perform, or delay in performance of, any of our obligations under a contract that is caused by events outside our reasonable control (Force Majeure Event).</p>
+    <p style="padding-left: 15px;">10.2 A Force Majeure Event includes any act, event, non-happening, omission or accident beyond our reasonable control and includes in particular (without limitation) the following:</p>
+     <p style="padding-left: 30px;">i.Strikes, lock-outs or other industrial action;</p>
+     <p style="padding-left: 30px;">ii. An epidemic;</p>
+     <p style="padding-left: 30px;">iii. Civil commotion, riot, invasion, terrorist attack or threat of terrorist attack, war (whether declared or not) or threat or preparation for war;</p>
+     <p style="padding-left: 30px;">iv. Fire, explosion, storm, flood, earthquake, subsidence, or other natural disaster;</p>
+     <p style="padding-left: 30px;">v. Impossibility of the use motor transport;</p>
+     <p style="padding-left: 30px;">vi. Impossibility of the use of public or private telecommunications networks, and</p>
+     <p style="padding-left: 30px;">vii. The acts, decrees, legislation, regulations or restrictions of any government.</p>
+    <p style="padding-left: 15px;">10.3 Our performance under any contract is deemed to be suspended for the period that the Force Majeure Event continues, and we will have an extension of time for performance for the duration of that period. We will use our reasonable endeavours to bring the Force Majeure Event to a close or to find a solution by which our obligations under the contract may be performed despite the Force Majeure Event.</p>
+    <p><strong>11&nbsp; </strong><strong>Written Communications</strong></p>
+    <p style="padding-left: 15px;">11.1 Where the law requires us to communicate with you in writing, we will do so by posting notices on our website or by email.&nbsp; For contractual purposes, you agree to this electronic means of communication and you acknowledge that all contracts, notices, information and other communications that we provide to you electronically comply with any legal requirement that such communications be in writing. This condition does not affect your statutory rights.</p>
+    <p><strong>12&nbsp;</strong><strong>Assignment</strong></p>
+    <p style="padding-left: 15px;">12.1 You may not transfer, assign, charge or otherwise dispose of a contract, or any of your rights or obligations arising under it, without our prior written consent.</p>
+    <p style="padding-left: 15px;">12.2 We may transfer, assign, charge, sub-contract or otherwise dispose of a contract, or any of our rights or obligations arising under it, at any time during the term of the contract.</p>
+    <p><strong>13&nbsp;&nbsp;</strong><strong>Law and jurisdiction</strong></p>
+    <p style="padding-left: 15px;">13.1 Contracts for the purchase of products through our Website will be governed by the united republic of Tanzania's law. Any dispute arising from, or related to, such contracts shall be subject to the exclusive jurisdiction of the courts of The United Republic Of Tanzania.</p>
+    <p style="padding-left: 15px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Last revised on 03.09.2023</p>
+
+
+    </div>
+    </div>
+    <br>
+      <footer class="py-5" style="padding-left: 2%; padding-right: 2%;background-color: darkgrey;">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Home</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="productA.html" class="nav-link p-0 text-body-secondary">Apartments</a></li>
+                <li class="nav-item mb-2"><a href="productB.html" class="nav-link p-0 text-body-secondary">Bakery</a></li>
+                <li class="nav-item mb-2"><a href="productM.html" class="nav-link p-0 text-body-secondary">Mini-supermarket</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Places</a></li>
+              <li class="nav-item mb-2"><a href="about us.html" class="nav-link p-0 text-body-secondary">About us</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Policies and Conditions</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Legal notice</a></li>
+              <li class="nav-item mb-2"><a href="privacy policy.html" class="nav-link p-0 text-body-secondary">Private policy</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cookie policy</a></li>
+              <li class="nav-item mb-2"><a href="terms of use.html" class="nav-link p-0 text-body-secondary">Terms of use</a></li>
+              <li class="nav-item mb-2"><a href="terms and conditions.html" class="nav-link p-0 text-body-secondary">Terms and Conditions</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Need Help?</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="C:\Users\25571\Desktop\project2\contact us.html" class="nav-link p-0 text-body-secondary">Contact us</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3" style="background-color: darkgrey;">
+            <form action="/action_page.php" onsubmit="myFunction()">
+              <h5><br>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-dark" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>© 2023 Malaika Apartments.LTD, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </div>
+      </footer>
+      <script>
+      function myFunction() {
+        alert("Thank you for registering.");
+      }
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
